@@ -3,12 +3,13 @@
 //         console.log(i*5)
 //     }
 // }
-
+// console.log("hi")
 // myfun()
 
-// let i=1;
-// do{
-//     console.log(i)
-// }while(i!=6);
+let i=1;
+do{
+    console.log(i);
+    i++;
+}while(i!=6);
 
 
