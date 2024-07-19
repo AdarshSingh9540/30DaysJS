@@ -40,15 +40,15 @@
 // console.log(book.year);
 
 
-const book = {
-    title:"Honesty",
-    author:"adarsh",
-    year:2024,
-    library:{
-        name:"La Prime library",
-        books:["Cat","Rat","Mat","Hat"],
-    }
-}
+// const book = {
+//     title:"Honesty",
+//     author:"adarsh",
+//     year:2024,
+//     library:{
+//         name:"La Prime library",
+//         books:["Cat","Rat","Mat","Hat"],
+//     }
+// }
 
 // console.log(book.library);
 
@@ -59,8 +59,40 @@ const book = {
 // })
 
 
-for (let key in book) {
-    if (book.hasOwnProperty(key)) {
-        console.log(`${key}: ${book[key]}`);
-    }
-}
+// for (let key in book) {
+//     if (book.hasOwnProperty(key)) {
+//         console.log(`${key}: ${book[key]}`);
+//     }
+// }
+
+
+// const library = {
+//     name:"Prime Library",
+//     books:[
+//         {name:"Cat" , author:"adarsh",year:2020},
+//         {
+//             name:"Chocolate Factory", author:"Charlie",year:1984
+//         },{
+//             name:"Rich Dad",author:"singh",year:2024
+//         }
+//     ]
+// }
+
+// console.log(library)
+
+// library.books.forEach(book=>{
+//     console.log(book.name)
+// })
+
+const book = {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    year: 1960,
+    getTitleAndYear: function () {
+      return `${this.title} (${this.year})`;
+    },
+  };
+
+  console.log("Keys",Object.keys(book))
+
+  console.log("Values",Object.values(book))
